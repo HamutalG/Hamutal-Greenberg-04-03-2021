@@ -1,0 +1,229 @@
+/*----------------------------------- */
+/* CSS styles for files that do not have their own folder */
+/*----------------------------------- */
+
+/*----------------------------------- */
+/* Header */
+/*----------------------------------- */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  display: block;
+  width: 30%;
+  margin: 2% auto;
+}
+
+.background {
+  background-image: linear-gradient(
+      to left bottom,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("images/headerBackground.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+/*----------------------------------- */
+/*MainBody*/
+/*----------------------------------- */
+/* loader */
+.loader {
+  margin-top: 50px;
+  top: calc(50% - 4em);
+  left: calc(50% - 4em);
+  width: 6em;
+  height: 6em;
+  border: 1.1em solid rgba(0, 0, 0, 0.2);
+  border-left: 1.1em solid #0084ff;
+  border-radius: 50%;
+  animation: load8 1.1s infinite linear;
+  transition: opacity 0.3s;
+}
+
+@keyframes load8 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* received items button */
+.roundButton {
+  border-radius: 50%;
+  box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.3), inset 0px 4px 1px 1px white,
+    inset 0px -3px 1px 1px rgba(204, 198, 197, 0.5);
+  float: left;
+  height: 70px;
+  position: relative;
+  width: 70px;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.roundButton:after {
+  color: #e9e6e4;
+  content: "";
+  display: block;
+  font-size: 30px;
+  height: 30px;
+  text-decoration: none;
+  text-shadow: 0px -1px 1px #bdb5b4, 1px 1px 1px white;
+  position: absolute;
+  width: 30px;
+}
+
+.roundButton:hover {
+  background-image: -webkit-linear-gradient(top, #fff, #f4f1ee);
+  background-image: linear-gradient(top, #fff, #f4f1ee);
+  color: #0088cc;
+}
+
+.roundButton:active {
+  background-image: -webkit-linear-gradient(top, #efedec, #f7f4f4);
+  background-image: linear-gradient(top, #efedec, #f7f4f4);
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.4),
+    inset 0px -3px 1px 1px rgba(204, 198, 197, 0.5);
+}
+
+.roundButton:active:after {
+  color: #dbd2d2;
+  text-shadow: 0px -1px 1px #bdb5b4, 0px 1px 1px white;
+}
+
+.receivedItem {
+  display: block;
+  width: 55px;
+  margin: 7px 7px;
+}
+
+.pageTitle {
+  margin: 20px auto;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.pageTitle:after {
+  display: block;
+  height: 2px;
+  background-color: rgb(22, 194, 206);
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+/* page 1 (homepage) tabs */
+.nav-tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.nav-tabs a {
+  color: rgb(22, 194, 206);
+  font-size: 1.1rem;
+}
+
+.nav-tabs a:hover {
+  color: rgb(32, 158, 167);
+  text-decoration: underline;
+}
+
+/*----------------------------------- */
+/*Footer*/
+/*----------------------------------- */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  background-color: rgb(43, 43, 43);
+  padding: 20px;
+  font-size: 90%;
+}
+
+.footer-nav {
+  list-style: none;
+  display: block;
+  float: left;
+  margin-left: 10%;
+}
+
+.social-links {
+  list-style: none;
+  float: right;
+  margin-right: 10%;
+}
+
+.footer-nav li,
+.social-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+  margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: rgb(131, 131, 131);
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  color: #ddd;
+}
+
+footer p {
+  max-width: 375px;
+  color: rgb(131, 131, 131);
+  margin: 0 auto;
+  font-size: 90%;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.facebook,
+.linkedin,
+.windows {
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+/* official facebook color code */
+.facebook:hover,
+.facebook:active {
+  color: #4267b2;
+}
+
+/* official linkedin color code */
+.linkedin:hover,
+.linkedin:active {
+  color: #0e76a8;
+}
+
+/* official windows 10 blue color code */
+.windows:hover,
+.windows:active {
+  color: #00adef;
+}

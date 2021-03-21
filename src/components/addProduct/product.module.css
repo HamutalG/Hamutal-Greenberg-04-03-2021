@@ -1,0 +1,114 @@
+.product {
+  width: 350px;
+  margin: 10px 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 10px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.product__details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.product__details__each {
+  width: 100%;
+  margin: 10px auto;
+}
+
+.price__qnty__details {
+  width: 110px;
+  align-self: flex-start;
+  margin: 10px auto;
+}
+
+.details__title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.details__title:after {
+  display: block;
+  height: 2px;
+  background-color: rgb(32, 158, 167);
+  content: " ";
+  width: 100px;
+  margin: 0px auto;
+}
+
+.details__date__outter {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.details__date__title {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 1rem;
+  margin-right: 15px;
+}
+
+.details__ETA {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+.datePicker {
+  width: 100px;
+  border: 0.5px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding-left: 5px;
+}
+
+/* Go Shopping! button */
+.customButton {
+  width: 180px;
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 1.5em;
+  font-family: "Josefin Sans", sans-serif;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  outline: none;
+  -webkit-appearance: none;
+  background: -webkit-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
+  background: linear-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
+  background-size: 500%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.customButton:hover {
+  animation-name: gradient;
+  -webkit-animation-name: gradient;
+  animation-duration: 1s;
+  -webkit-animation-duration: s;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}

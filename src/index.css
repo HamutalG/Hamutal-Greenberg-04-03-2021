@@ -1,0 +1,28 @@
+/*----------------------------------- */
+/*Basic Setup*/
+/*----------------------------------- */
+
+body {
+  margin: 0;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+}
+
+/* only for IE 10 and 11 */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  body {
+    height: 100%;
+    font-family: sans-serif;
+    text-align: center;
+  }
+
+  #root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+  }
+}

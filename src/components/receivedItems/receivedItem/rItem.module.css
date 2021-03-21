@@ -1,0 +1,106 @@
+.item {
+  width: 250px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 10px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.item__details {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.item__details__inner {
+  width: 60%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.details__title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.details__inner {
+  font-size: 0.9rem;
+}
+
+.item__buttons {
+  width: 40%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.item__buttons__inner {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: flex-end;
+  justify-content: space-around;
+}
+
+.deleteItem {
+  animation: fadeOut ease 2s;
+  -webkit-animation: fadeOut ease 2s;
+  -moz-animation: fadeOut ease 2s;
+  -o-animation: fadeOut ease 2s;
+  -ms-animation: fadeOut ease 2s;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,50 @@
+.store {
+  width: 250px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 10px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.store__details {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.details__text {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.total_products {
+  font-size: 0.9rem;
+}
+
+/* css for product list */
+.modalTitle:after {
+  display: block;
+  height: 2px;
+  background-color: rgb(22, 194, 206);
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+}
+
+.buttons__btn {
+  border: none;
+  background: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.buttons__btn:hover {
+  opacity: 0.7;
+}
